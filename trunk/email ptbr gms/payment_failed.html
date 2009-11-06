@@ -1,0 +1,58 @@
+{* This is a comment block
+
+Use vars: {{var var_name}}
+*}<!--@subject Transação de Pagamento Falhou @-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Transa&ccedil;&atilde;o de pagamento falhou.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    <b>Motivo</b><br />
+                    {{var reason}}
+                </p>
+                <p>
+                    <b>Tipo de Finaliza&ccedil;&atilde;o de Compra</b><br />
+                    {{var checkoutType}}
+                </p>
+                <p>
+                    <b>Cliente:</b><br />
+                    <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+                </p>
+                <p>
+                    <b>Produtos:</b><br />
+                    {{var items}}
+                </p>
+                <p>
+                    <b>Total:</b><br />
+                    {{var total}}
+                </p>
+                <p>
+                    <b>Endere&ccedil;o de cobran&ccedil;a:</b><br />
+                    {{var billingAddress.format('html')}}
+                </p>
+                <p>
+                    <b>Endere&ccedil;o de entrega:</b><br />
+                    {{var shippingAddress.format('html')}}
+                </p>
+                <p>
+                    <b>Forma de envio:</b><br />
+                    {{var shippingMethod}}
+                </p>
+                <p>
+                    <b>Forma de Pagamento:</b><br />
+                    {{var paymentMethod}}
+                </p>
+                <p>
+                    <b>Data e Hora:</b><br />
+                    {{var dateAndTime}}
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
