@@ -1,0 +1,46 @@
+<!--@subject Bem-vindo, {{var customer.name}}! @-->
+
+<style type="text/css">
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+        <tr>
+            <td align="center" valign="top">
+                <!-- [ header starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="Loja MP3 Casa de Davi"  style="margin-bottom:10px;" border="0"/></a></td>
+                    </tr>
+                </table>
+
+                <!-- [ middle starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><strong>Prezado(a) {{var customer.name}}</strong>,<br/>
+                            Bem-vindo ao Gospel Media Store. Para fazer o login ao visitar nosso site, clique em <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Entrar</a> ou em <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Minha Conta</a> no topo de todas as p&aacute;ginas, digitando seu email e sua senha.</p>
+
+                            <p>Quando entrar em sua conta, voc&ecirc; poder&aacute; fazer o seguinte:</p>
+
+                            <ul>
+                                <li>Finalizar uma compra mais r&aacute;pido</li>
+                                <li>Verificar a situa&ccedil;&atilde;o dos pedidos</li>
+                                <li>Ver compras realizadas</li>
+                                <li>Alterar dados de sua conta</li>
+                                <li>Trocar sua senha</li>
+                                <li>Cadastrar endere&ccedil;os alternativos (para enviar &agrave; multiplos familiares e amigos!)</li>
+                            </ul>
+
+                            <p>Se voc&ecirc; possuir quaisquer d&uacute;vidas acerca de sua conta ou qualquer outro assunto, por favor, sinta-se &agrave; vontade para nos contactar pelo email <a href="mailto:sac@casadedavi.com.br" style="color:#1E7EC8;">sac@casadedavi.com.br</a> ou pelo telefone (43) 3334-1412.</p>
+                            <p>Obrigado!</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</div>

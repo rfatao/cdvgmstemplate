@@ -1,0 +1,37 @@
+<!--@subject Nova Conta - Chave de Confirmação {{var customer.name}} @-->
+
+<style type="text/css">
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+        <tr>
+            <td align="center" valign="top">
+                <!-- [ header starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="Loja MP3 Casa de Davi"  style="margin-bottom:10px;" border="0"/></a></td>
+                    </tr>
+                </table>
+
+                <!-- [ middle starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><strong>Prezado(a) {{var customer.name}}</strong>, <br/> Bem-vindo &agrave; loja Gospel Media Store.</p>
+
+                            <p>Seu email {{var customer.email}} precisa ser confirmado antes de utiliz&aacute;-lo para entrar em nossa loja.</p>
+
+                            <p>Para confirmar o email e imediatamente efetuar o login, por favor, utilize este <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">link de confirma&ccedil;&atilde;o</a>. Este link &eacute; v&aacute;lido uma &uacute;nica vez.</p>
+
+                            <p>Se voc&ecirc; possuir quaisquer d&uacute;vidas acerca de sua conta ou qualquer outro assunto, por favor, sinta-se a vontade para nos contactar pelo email <a href="mailto:sac@casadedavi.com.br" style="color:#1E7EC8;">sac@casadedavi.com.br</a> ou pelo telefone (43) 3334-1412.</p>
+                            <p>Obrigado!</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
